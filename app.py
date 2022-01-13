@@ -463,7 +463,7 @@ async def view_submission(ack, body, logger, client):
             body = make_body(date_msg, ao_msg, q_msg, pax_msg,
                              fngs_msg, count_msg, moleskine_msg)
             msg = header_msg + "\n" + title_msg + "\n" + body
-            await client.chat_postMessage(channel=chan, text=msg)
+            await client.chat_postMessage(channel=chan, text=msg, as_user=True)
             logger.info('\nMessage posted to Slack! \n{}'.format(msg))
     except Exception as slack_bolt_err:
         logger.error('Error with posting Slack message with chat_postMessage: {}'.format(
