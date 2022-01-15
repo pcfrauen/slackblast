@@ -339,7 +339,7 @@ async def command(ack, body, respond, client, logger):
                 "type": "plain_text_input",
                 "multiline": True,
                 "action_id": "plain_text_input-action",
-                "initial_value": "WARMUP: \nTHE THANG: \nMARY: \nANNOUNCEMENTS: \nCOT: ",
+                "initial_value": "CONDITIONS: \nDISCLAIMER: \nWARMUP: \nTHE THANG: \nMARY: \nANNOUNCEMENTS: \nCOT: ",
                 "placeholder": {
                     "type": "plain_text",
                     "text": "Tell us what happened\n\n"
